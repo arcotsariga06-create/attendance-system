@@ -41,14 +41,16 @@ border-radius:5px;
 
 <div class="container">
 
-<h2>Student Attendance</h2>
+<h2>Student Attendance Login</h2>
 
-<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
 
 <br>
 
-<button onclick="markPresent()">Present</button>
-<button onclick="markAbsent()">Absent</button>
+<!-- Login button added here -->
+<button onclick="login()">Login</button>
 
 <h3 id="result"></h3>
 
@@ -56,12 +58,8 @@ border-radius:5px;
 
 <script>
 
-function markPresent(){
-document.getElementById("result").innerHTML="Marked Present";
-}
-
-function markAbsent(){
-document.getElementById("result").innerHTML="Marked Absent";
+function login(){
+window.location.href="dashboard.html";
 }
 
 </script>
